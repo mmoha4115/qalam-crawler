@@ -6,5 +6,13 @@
 </head>
 <body>
 
+<tr th:each="titleandhref : ${result}">
+    <td>
+        <a th:href="${titleandhref.value}" th:text="${titleandhref.key}"> Title </a>
+    </td>
+    <br/>
+    <hr/>
+</tr>
+
 </body>
 </html>
